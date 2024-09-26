@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Meow
-//
-//  Created by Vicente Juan on 25/09/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
