@@ -12,6 +12,7 @@
 		85BC9DA42CA5187500E92E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BC9DA32CA5187500E92E41 /* Assets.xcassets */; };
 		85BC9DA72CA5187500E92E41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BC9DA62CA5187500E92E41 /* Preview Assets.xcassets */; };
 		85C5C4452CA85557005605E3 /* HttpRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C5C4442CA85557005605E3 /* HttpRequestStatus.swift */; };
+		85D334262CA9932300C3255D /* HttpRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D334252CA9932300C3255D /* HttpRequestHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		85BC9DA32CA5187500E92E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85BC9DA62CA5187500E92E41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85C5C4442CA85557005605E3 /* HttpRequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestStatus.swift; sourceTree = "<group>"; };
+		85D334252CA9932300C3255D /* HttpRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				85C5C4442CA85557005605E3 /* HttpRequestStatus.swift */,
+				85D334252CA9932300C3255D /* HttpRequestHandler.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				85C5C4452CA85557005605E3 /* HttpRequestStatus.swift in Sources */,
 				85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */,
+				85D334262CA9932300C3255D /* HttpRequestHandler.swift in Sources */,
 				85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
