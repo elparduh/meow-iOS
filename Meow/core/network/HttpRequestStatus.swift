@@ -15,9 +15,9 @@ extension HttpRequestStatus {
     
     func getMessage() -> String {
         switch self {
-        case .successfulRequest: "Success";
-        case .badRequest: "Bad request";
-        case .unauthorizedRequest: "User unauthorized";
+        case .successfulRequest: "Success"
+        case .badRequest: "Bad request"
+        case .unauthorizedRequest: "User unauthorized"
         case .forbiddenRequest: "Forbidden request"
         case .internalServerError: "Some thing went wrong"
         case .notFoundError: "Url not found"
