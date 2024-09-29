@@ -4,6 +4,7 @@ struct HttpRequestHandler {
     
     func createRequestStatus(response: (data: Data, httpResponse: URLResponse)) -> HttpRequestStatus {
         let httpResponse = response.httpResponse as? HTTPURLResponse
+        
         switch httpResponse?.statusCode {
         case 200: return HttpRequestStatus.successfulRequest
         case 400: return HttpRequestStatus.badRequest
@@ -12,7 +13,15 @@ struct HttpRequestHandler {
         case 404: return HttpRequestStatus.notFoundError
         case 500: return HttpRequestStatus.internalServerError
         default:
-            return HttpRequestStatus.unknown(String(data: response.data, encoding: String.Encoding.utf8) ?? "Unknown");
+            let serverData = String(data: response.data, encoding: String.Encoding.utf8)
+            return HttpRequestStatus.unknown(serverData ?? "Unknown");
         }
+    }
+    
+    func createRequestStatusFrom(error: Error) -> HttpRequestStatus {
+        if error.isNetworkConnectionError() {
+            return HttpRequestStatus.connectionNetwork
+        }
+        return HttpRequestStatus.unknown(error.localizedDescription)
     }
 }
