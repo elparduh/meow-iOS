@@ -19,13 +19,8 @@ struct CatImageRemoteDataSource: CatImageRemoteDataSourceProtocol {
       throw HttpRequestStatus.invalidURLError
     }
 
-    var urlRequest: URLRequest = URLRequest(url: url)
-    urlRequest.httpMethod = "GET"
-    urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
-    urlRequest.addValue("application/json;charset=UTF-8", forHTTPHeaderField: "Content-Type")
-
     do {
-      let response: APIResponse = try await urlSession.data(for: urlRequest)
+      let response: APIResponse = try await urlSession.data(for: url.createGetURLRequest())
 
       let httpRequestStatus: HttpRequestStatus = httpRequestHandler.createRequestStatus(response: response)
 
