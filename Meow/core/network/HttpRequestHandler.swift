@@ -1,8 +1,10 @@
 import Foundation
 
+typealias APIResponse = (data: Data, httpResponse: URLResponse)
+
 struct HttpRequestHandler {
     
-    func createRequestStatus(response: (data: Data, httpResponse: URLResponse)) -> HttpRequestStatus {
+    func createRequestStatus(response: APIResponse) -> HttpRequestStatus {
         let httpResponse = response.httpResponse as? HTTPURLResponse
         
         switch httpResponse?.statusCode {
