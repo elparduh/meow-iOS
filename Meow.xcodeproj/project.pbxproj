@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2093A8262CF33EE40086B764 /* CatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A8252CF33EE40086B764 /* CatModels.swift */; };
 		20FD27A12CF2ADE900DFF999 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */; };
 		85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9D9F2CA5187400E92E41 /* MeowApp.swift */; };
 		85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9DA12CA5187400E92E41 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2093A8252CF33EE40086B764 /* CatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModels.swift; sourceTree = "<group>"; };
 		20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		85BC9D9C2CA5187400E92E41 /* Meow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BC9D9F2CA5187400E92E41 /* MeowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowApp.swift; sourceTree = "<group>"; };
@@ -40,6 +42,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2093A8222CF33DBA0086B764 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				2093A8232CF33DC70086B764 /* domain */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		2093A8232CF33DC70086B764 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				2093A8242CF33DD40086B764 /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		2093A8242CF33DD40086B764 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2093A8252CF33EE40086B764 /* CatModels.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		85BC9D932CA5187400E92E41 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +105,7 @@
 		85C5C4422CA846C9005605E3 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				2093A8222CF33DBA0086B764 /* features */,
 				20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */,
 				85D334272CA9D97C00C3255D /* extension */,
 				85C5C4432CA8552B005605E3 /* network */,
@@ -177,6 +204,7 @@
 			files = (
 				85D334292CA9DB1400C3255D /* Error+Ext.swift in Sources */,
 				85C5C4452CA85557005605E3 /* HttpRequestStatus.swift in Sources */,
+				2093A8262CF33EE40086B764 /* CatModels.swift in Sources */,
 				85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */,
 				85D334262CA9932300C3255D /* HttpRequestHandler.swift in Sources */,
 				85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */,
