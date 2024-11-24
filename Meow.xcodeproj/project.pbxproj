@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FD27A12CF2ADE900DFF999 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */; };
 		85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9D9F2CA5187400E92E41 /* MeowApp.swift */; };
 		85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9DA12CA5187400E92E41 /* ContentView.swift */; };
 		85BC9DA42CA5187500E92E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BC9DA32CA5187500E92E41 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		85BC9D9C2CA5187400E92E41 /* Meow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BC9D9F2CA5187400E92E41 /* MeowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowApp.swift; sourceTree = "<group>"; };
 		85BC9DA12CA5187400E92E41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		85C5C4422CA846C9005605E3 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */,
 				85D334272CA9D97C00C3255D /* extension */,
 				85C5C4432CA8552B005605E3 /* network */,
 			);
@@ -128,7 +131,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					85BC9D9B2CA5187400E92E41 = {
 						CreatedOnToolsVersion = 15.4;
@@ -137,11 +140,12 @@
 			};
 			buildConfigurationList = 85BC9D972CA5187400E92E41 /* Build configuration list for PBXProject "Meow" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "es-419";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 85BC9D932CA5187400E92E41;
 			productRefGroup = 85BC9D9D2CA5187400E92E41 /* Products */;
@@ -160,6 +164,7 @@
 			files = (
 				85BC9DA72CA5187500E92E41 /* Preview Assets.xcassets in Resources */,
 				85BC9DA42CA5187500E92E41 /* Assets.xcassets in Resources */,
+				20FD27A12CF2ADE900DFF999 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +191,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -249,6 +255,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

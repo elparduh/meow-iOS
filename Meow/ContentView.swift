@@ -10,7 +10,7 @@ struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 64.0))
                     .padding()
                 Button(action: {}) {
-                    Text("Generar imagen")
+                    Text("Generator Button Text")
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 16)
@@ -19,7 +19,7 @@ struct ContentView: View {
                         .foregroundColor(.black)
                 }
             }
-            .navigationTitle("Meow")
+            .navigationTitle("Navigation Title Text")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
