@@ -1,3 +1,4 @@
 struct APIConfig {
-  static let getCat = "https://api.thecatapi.com/v1/images/search"
+  static let baseUrl = "https://api.thecatapi.com/v1"
+  static let getCatImage = "/images/search"
 }
