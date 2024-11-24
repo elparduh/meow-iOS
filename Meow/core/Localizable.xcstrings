@@ -1,0 +1,38 @@
+{
+  "sourceLanguage" : "es-419",
+  "strings" : {
+    "Generator Button Text" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generate cat"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generar gato"
+          }
+        }
+      }
+    },
+    "Navigation Title Text" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meow"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miau"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
