@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2093A8262CF33EE40086B764 /* CatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A8252CF33EE40086B764 /* CatModels.swift */; };
 		2093A82B2CF341160086B764 /* CatImageRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A82A2CF341160086B764 /* CatImageRemoteDataSource.swift */; };
+		2093A82E2CF36EB40086B764 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A82D2CF36EAA0086B764 /* APIConfig.swift */; };
+		2093A8312CF371740086B764 /* CatApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A8302CF371740086B764 /* CatApiModels.swift */; };
 		20FD27A12CF2ADE900DFF999 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */; };
 		85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9D9F2CA5187400E92E41 /* MeowApp.swift */; };
 		85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9DA12CA5187400E92E41 /* ContentView.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		2093A8252CF33EE40086B764 /* CatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModels.swift; sourceTree = "<group>"; };
 		2093A82A2CF341160086B764 /* CatImageRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRemoteDataSource.swift; sourceTree = "<group>"; };
+		2093A82D2CF36EAA0086B764 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		2093A8302CF371740086B764 /* CatApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApiModels.swift; sourceTree = "<group>"; };
 		20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		85BC9D9C2CA5187400E92E41 /* Meow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BC9D9F2CA5187400E92E41 /* MeowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowApp.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		2093A8272CF340D90086B764 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				2093A82F2CF370FA0086B764 /* model */,
 				2093A8282CF340E20086B764 /* remote */,
 			);
 			path = data;
@@ -89,6 +94,14 @@
 		2093A8292CF340F80086B764 /* model */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2093A82F2CF370FA0086B764 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2093A8302CF371740086B764 /* CatApiModels.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 		85C5C4432CA8552B005605E3 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				2093A82D2CF36EAA0086B764 /* APIConfig.swift */,
 				85C5C4442CA85557005605E3 /* HttpRequestStatus.swift */,
 				85D334252CA9932300C3255D /* HttpRequestHandler.swift */,
 			);
@@ -231,11 +245,13 @@
 			files = (
 				85D334292CA9DB1400C3255D /* Error+Ext.swift in Sources */,
 				2093A82B2CF341160086B764 /* CatImageRemoteDataSource.swift in Sources */,
+				2093A82E2CF36EB40086B764 /* APIConfig.swift in Sources */,
 				85C5C4452CA85557005605E3 /* HttpRequestStatus.swift in Sources */,
 				2093A8262CF33EE40086B764 /* CatModels.swift in Sources */,
 				85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */,
 				85D334262CA9932300C3255D /* HttpRequestHandler.swift in Sources */,
 				85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */,
+				2093A8312CF371740086B764 /* CatApiModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
