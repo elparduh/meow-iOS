@@ -13,6 +13,7 @@
 		2093A8312CF371740086B764 /* CatApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A8302CF371740086B764 /* CatApiModels.swift */; };
 		2093A8332CF3B29E0086B764 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093A8322CF3B29E0086B764 /* URL+Ext.swift */; };
 		20FD27A12CF2ADE900DFF999 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */; };
+		853BA1EE2CF4002D001160A1 /* CatImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853BA1ED2CF4002D001160A1 /* CatImageRepository.swift */; };
 		85BC9DA02CA5187400E92E41 /* MeowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9D9F2CA5187400E92E41 /* MeowApp.swift */; };
 		85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BC9DA12CA5187400E92E41 /* ContentView.swift */; };
 		85BC9DA42CA5187500E92E41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BC9DA32CA5187500E92E41 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		2093A8302CF371740086B764 /* CatApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatApiModels.swift; sourceTree = "<group>"; };
 		2093A8322CF3B29E0086B764 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
 		20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		853BA1ED2CF4002D001160A1 /* CatImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRepository.swift; sourceTree = "<group>"; };
 		85BC9D9C2CA5187400E92E41 /* Meow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BC9D9F2CA5187400E92E41 /* MeowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeowApp.swift; sourceTree = "<group>"; };
 		85BC9DA12CA5187400E92E41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +80,7 @@
 		2093A8272CF340D90086B764 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				2093A82F2CF370FA0086B764 /* model */,
+				853BA1EC2CF3FFC2001160A1 /* repository */,
 				2093A8282CF340E20086B764 /* remote */,
 			);
 			path = data;
@@ -87,17 +89,10 @@
 		2093A8282CF340E20086B764 /* remote */ = {
 			isa = PBXGroup;
 			children = (
-				2093A8292CF340F80086B764 /* model */,
+				2093A82F2CF370FA0086B764 /* model */,
 				2093A82A2CF341160086B764 /* CatImageRemoteDataSource.swift */,
 			);
 			path = remote;
-			sourceTree = "<group>";
-		};
-		2093A8292CF340F80086B764 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		2093A82F2CF370FA0086B764 /* model */ = {
@@ -106,6 +101,14 @@
 				2093A8302CF371740086B764 /* CatApiModels.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		853BA1EC2CF3FFC2001160A1 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				853BA1ED2CF4002D001160A1 /* CatImageRepository.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 		85BC9D932CA5187400E92E41 = {
@@ -127,6 +130,7 @@
 		85BC9D9E2CA5187400E92E41 /* Meow */ = {
 			isa = PBXGroup;
 			children = (
+				2093A8222CF33DBA0086B764 /* features */,
 				85C5C4422CA846C9005605E3 /* core */,
 				85BC9D9F2CA5187400E92E41 /* MeowApp.swift */,
 				85BC9DA12CA5187400E92E41 /* ContentView.swift */,
@@ -147,7 +151,6 @@
 		85C5C4422CA846C9005605E3 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				2093A8222CF33DBA0086B764 /* features */,
 				20FD27A02CF2ADE900DFF999 /* Localizable.xcstrings */,
 				85D334272CA9D97C00C3255D /* extension */,
 				85C5C4432CA8552B005605E3 /* network */,
@@ -251,6 +254,7 @@
 				2093A82E2CF36EB40086B764 /* APIConfig.swift in Sources */,
 				85C5C4452CA85557005605E3 /* HttpRequestStatus.swift in Sources */,
 				2093A8262CF33EE40086B764 /* CatModels.swift in Sources */,
+				853BA1EE2CF4002D001160A1 /* CatImageRepository.swift in Sources */,
 				85BC9DA22CA5187400E92E41 /* ContentView.swift in Sources */,
 				85D334262CA9932300C3255D /* HttpRequestHandler.swift in Sources */,
 				2093A8332CF3B29E0086B764 /* URL+Ext.swift in Sources */,
