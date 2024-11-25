@@ -6,6 +6,7 @@ protocol CatImageRepositoryProtocol {
 }
 
 struct CatImageRepository: CatImageRepositoryProtocol {
+    
     var catImageRemoteDataSourceProtocol: CatImageRemoteDataSourceProtocol
     
     init(catImageRemoteDataSourceProtocol: CatImageRemoteDataSourceProtocol) {
